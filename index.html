@@ -20,7 +20,7 @@
             <!-- Start Quiz Container -->
             <div id="mainContainer">
                 <div id="textDescription">
-                    There 10 questions about CSS and 60 seconds to complete!
+                    There are 10 questions about CSS and 60 seconds to complete!
                 </div>
                     <div id="questionContainer">
                     Question here.
@@ -59,10 +59,10 @@
                         <br>
                         Add Name to High Score List.
                     </div>
-                    <form id="localStorageForm">
+                    <form id="localStorageForm" onkeypress="return event.keyCode != 13;">
                         <input name="Name" type="nameHighScore" id="nameHS" placeholder="Name">
                     </form>
-                    <button type="submit" id="submitFormButton" onClick="gameOver()">
+                    <button id="submitFormButton" onClick="gameOver()">
                         Submit
                     </button>
                     <button id="clearHighScores" onClick="clearAll()">Clear High Scores</button>
