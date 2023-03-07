@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Work Out</title>
+        <link rel="stylesheet" href="assets\style.css" />
+        <script src="assets\script.js" defer></script>
+    </head>
+        <header>
+            <button id="viewHighScore" onClick="highScoreDisplay()">View High Scores</button>
+            <button id="viewHighScoreDisable" onClick="highScoreDisplayDisable()">View High Scores</button>
+            <h2 id="score">Score&nbsp:&nbsp</h2>
+            <h2 id="timeLeft">00 :</h2>
+        </header>
+    <body>
+        <div id="startQuiz">
+            <!-- Start Quiz Container -->
+            <div id="mainContainer">
+                <div id="textDescription">
+                    There 10 questions about CSS and 60 seconds to complete!
+                </div>
+                    <div id="questionContainer">
+                    Question here.
+                    </div>
+                <button type="button" id="startButton" onClick="startQuizNow()">
+                Start Button
+                </button>
+
+                <button type="button" id="questionOneAnswer" onClick="buttonOne()">
+                <!-- Answer 1 -->
+                </button>
+                <div id="questionOneText">
+                    selection1
+                </div>
+                <button type="button" id="questionTwoAnswer" onClick="buttonTwo()">
+                <!-- Answer 2 -->
+                </button>
+                <div id="questionTwoText">
+                    selection2
+                </div>
+                <button type="button" id="questionThreeAnswer" onClick="buttonThree()">
+                <!-- Answer 3 -->
+                </button>
+                <div id="questionThreeText">
+                    selection3
+                </div>
+                <button type="button" id="questionFourAnswer" onClick="buttonFour()">
+                <!-- Answer 4 -->
+                </button>
+                <div id="questionFourText">
+                    selection4
+                </div>
+                <div id="gameOverScreen">
+                    <div id="gameOverTitle">
+                        Game Over!
+                        <br>
+                        Add Name to High Score List.
+                    </div>
+                    <form id="localStorageForm">
+                        <input name="Name" type="nameHighScore" id="nameHS" placeholder="Name">
+                    </form>
+                    <button type="submit" id="submitFormButton" onClick="gameOver()">
+                        Submit
+                    </button>
+                    <button id="clearHighScores" onClick="clearAll()">Clear High Scores</button>
+                </div>
+                <div id="displayHighScores">
+                    <div id="titleHighScores">High Scores</div>
+                    <div id="highScoreOne">1</div>
+                    <div id="highScoreTwo">2</div>
+                    <div id="highScoreThree">3</div>
+                    <div id="highScoreFour">4</div>
+                    <div id="highScoreFive">5</div>
+                    <div id="highScoreSix">6</div>
+                    <div id="highScoreSeven">7</div>
+                    <div id="highScoreEight">8</div>
+                    <div id="highScoreNine">9</div>
+                    <div id="highScoreTen">10</div>
+                    <button id="restartButton" onClick="reloadQuiz()">Try Again? Click here</button>
+                </div>
+
+                <div id="correctOrWrong">
+                    Correct or Wrong
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

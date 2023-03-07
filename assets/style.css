@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    right: 1000px;
+}
+
+#viewHighScore {
+    position:absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 4rem;
+    background-color: dodgerblue;
+    top: 50px;
+    right: 1500px;
+}
+
+#viewHighScoreDisable {
+    position:absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 4rem;
+    background-color: dodgerblue;
+    top: 50px;
+    right: 1500px;
+}
+
+#timeLeft {
+    position:absolute;
+    top: 50px;
+    left: 1500px;
+}
+
+#startQuiz {
+    position: absolute;
+    top: 150px;
+    border-radius: 4rem;
+}
+
+#mainContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    border: 5px solid lightblue;
+    border-radius: 4rem;
+}
+
+#textDescription {
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    margin: 10%;
+    background-color: white;
+}
+
+#startButton {
+    width: 100px;
+    height: 50px;
+    margin-left: 45%;
+    margin-bottom: 10%;
+    border-radius: 4rem;
+    background-color: dodgerblue;
+    /*add onClick function that adds display:none to start button and text description and make the quiz visible*/
+}
+
+#questionContainer {
+    display:none;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    margin: 10%;
+    background-color: white;
+}
+
+#questionOneAnswer {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 20%;
+    top: 60%;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+#questionTwoAnswer {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 20%;
+    top: 70%;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#questionThreeAnswer {   
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 20%;
+    top: 80%;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#questionFourAnswer {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 20%;
+    top: 90%;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#questionOneText {
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    border: 5px dashed black;
+    background-color: lightblue;
+    top: 60%;
+    left: 26%;
+
+}
+#questionTwoText {
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    border: 5px dashed black;
+    background-color: lightblue;
+    top: 70%;
+    left: 26%;
+
+}
+#questionThreeText {
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    border: 5px dashed black;
+    background-color: lightblue;
+    top: 80%;
+    left: 26%;
+
+}
+#questionFourText {
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    border: 5px dashed black;
+    background-color: lightblue;
+    top: 90%;
+    left: 26%;
+
+}
+
+#gameOverScreen {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    top: 50%;
+    left: 36.5%;
+}
+
+#titleHighScores {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 15%;
+    left: 32%;
+}
+
+#highScoreOne {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 20%;
+    left: 32%;
+}
+
+#highScoreTwo {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 25%;
+    left: 32%;
+}
+
+#highScoreThree {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 30%;
+    left: 32%;
+}
+
+#highScoreFour {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 35%;
+    left: 32%;
+}
+
+#highScoreFive {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 40%;
+    left: 32%;
+}
+
+#highScoreSix {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 45%;
+    left: 32%;
+}
+
+#highScoreSeven {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 50%;
+    left: 32%;
+}
+
+#highScoreEight {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 55%;
+    left: 32%;
+}
+
+#highScoreNine {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 60%;
+    left: 32%;
+}
+
+#highScoreTen {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    top: 65%;
+    left: 32%;
+}
+
+#restartButton {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    background-color: lightseagreen;
+    top: 65%;
+    left: 32%;
+}
+
+#correctOrWrong {
+    display: none;
+    position:absolute;
+    font-size: 25px;
+    color: grey;
+    z-index: 2;
+    top: 90%;
+    left: 70%;
+}
